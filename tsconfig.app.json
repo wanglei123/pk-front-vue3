@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "typed-router.d"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
@@ -10,5 +10,6 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "moduleResolution": "node" // 在router/index.ts中，vue-router/auto报红时，增加此句
 }
