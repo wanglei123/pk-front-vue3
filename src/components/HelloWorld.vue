@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    helloword
+    helloword组件
   </div>
 </template>
 
