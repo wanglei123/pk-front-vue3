@@ -24,6 +24,8 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.66",
+    "@iconify/json": "^2.2.200",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.6",
@@ -46,6 +48,7 @@
     "typescript": "~5.4.0",
     "unocss": "^0.59.2",
     "unplugin-auto-import": "^0.17.5",
+    "unplugin-icons": "^0.18.5",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-router": "^0.8.6",
     "vite": "^5.2.8",

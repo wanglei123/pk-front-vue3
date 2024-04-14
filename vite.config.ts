@@ -8,6 +8,8 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import {VueRouterAutoImports} from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
 
 
 // https://vitejs.dev/config/
@@ -33,7 +35,14 @@ export default defineConfig({
         '@vueuse/core'
         ]
     }),
-    Components()
+    Components({
+      resolvers: [
+        IconsResolver(),
+      ],
+    }),
+    Icons({
+      autoInstall: true
+    })
   ],
   resolve: {
     alias: {
