@@ -30,6 +30,10 @@ const target = ref(null)
 const { x, y, isOutside } = useMouseInElement(target)
 
 </script>
+<route lang="yaml">
+meta:
+layout: default
+</route>
 
 
 
