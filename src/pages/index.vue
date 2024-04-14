@@ -6,6 +6,9 @@ import HelloWorld from '../components/HelloWorld.vue'
 <template>
   <div>
     <HelloWorld  msg=""/>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
   </div>
 </template>
 
