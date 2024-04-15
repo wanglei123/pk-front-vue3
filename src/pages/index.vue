@@ -1,13 +1,11 @@
 <template>
   <div ref="target" class="green">
-    <HelloWorld  msg=""/>
-    <h1 className="text-3xl font-bold underline">
-      这是首页
-    </h1>
-    <div>{{msg}}</div>
+    <HelloWorld msg="" />
+    <h1 className="text-3xl font-bold underline">这是首页</h1>
+    <div>{{ msg }}</div>
   </div>
-  <div>{{ x}} {{y}} {{isOutside}}</div>
-  <icon-account-box style="font-size: 2em; color: red"/>
+  <div>{{ x }} {{ y }} {{ isOutside }}</div>
+  <icon-account-box style="font-size: 2em; color: red" />
   <!-- A basic anchor icon from Phosphor icons -->
   <div class="i-ph-anchor-simple-thin" />
   <!-- An orange alarm from Material Design Icons -->
@@ -28,17 +26,6 @@ import IconAccountBox from '~icons/mdi/account-box'
 const msg = ref('123')
 const target = ref(null)
 const { x, y, isOutside } = useMouseInElement(target)
-
 </script>
-<route lang="yaml">
-meta:
-layout: default
-</route>
 
-
-
-
-
-<style scoped>
-
-</style>
+<style scoped></style>
