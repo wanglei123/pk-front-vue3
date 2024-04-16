@@ -20,7 +20,6 @@
   <div class="i-ion:add-circle-sharp" style="font-size: 2rem; color: red"></div>
 </template>
 <script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
 import IconAccountBox from '~icons/mdi/account-box'
 
 const msg = ref('123')
@@ -29,3 +28,7 @@ const { x, y, isOutside } = useMouseInElement(target)
 </script>
 
 <style scoped></style>
+<route lang="yaml">
+meta:
+  layout: myDefault
+</route>

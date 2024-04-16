@@ -35,16 +35,13 @@ export default defineConfig({
         '@vueuse/core'
       ]
     }),
-    Components({
-      resolvers: [IconsResolver()]
-    }),
+    Components({ resolvers: [IconsResolver()] }),
     Icons({
       autoInstall: true
     }),
     Layouts({
       layoutsDirs: 'src/layouts',
-      pagesDirs: 'src/pages',
-      defaultLayout: 'myDefault'
+      pagesDirs: 'src/pages'
     })
   ],
   resolve: {
