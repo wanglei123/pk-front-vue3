@@ -1,7 +1,7 @@
 <template>
   <div ref="target" class="green">
     <HelloWorld msg="" />
-    <h1 className="text-3xl font-bold underline">这是首页</h1>
+    <h1 className="text-3xl font-bold underline">这是首页11111</h1>
     <div>{{ msg }}</div>
   </div>
   <div>{{ x }} {{ y }} {{ isOutside }}</div>
